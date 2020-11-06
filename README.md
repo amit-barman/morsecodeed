@@ -7,7 +7,7 @@
 
 <p float="left">
 	<img src="screenshot\Screenshot.png" height="250" width="410" />
-	<img src="screenshots\Screenshot1.png" height="250" width="410" />
+	<img src="screenshot\Screenshot1.png" height="250" width="410" />
 </p>
 
 ## what is morsecode ?
