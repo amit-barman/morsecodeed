@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decode morse code</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body background="images/image3.jpg">
+
+<div>
+		<h1>Morse code to Text</h1>
+	</br>
+		<textarea id="morse" cols="50" rows="6"></textarea>
+	</br>
+		<textarea id="text" cols="50" rows="6"></textarea>
+	</br>
+		<button onclick="decode()">Decode</button>
+	</br>
+		<a href="index.html">Encode plain text to morse code</a>
+</div>
+
+	<script>
+		const decode = () => {
+			// dictionary of morsecode
+				var dictionary = {  
+					   "-----" : "0",
+					   ".----" : "1",
+					   "..---" : "2",
+					   "...--" : "3",
+					   "....-" : "4",
+					   "....." : "5",
+					   "-...." : "6",
+					   "--..." : "7",
+					   "---.." : "8",
+					   "----." : "9",
+					   ".-" : "a",
+					   "-..." : "b",
+					   "-.-." : "c",
+					   "-.." : "d",
+					   "." : "e",
+					   "..-." : "f",
+					   "--." : "g",
+					   "...." : "h",
+					   ".." : "i",
+					   ".---" : "j",
+					   "-.-" : "k",
+					   ".-.." : "l",
+					   "--" : "m",
+					   "-." : "n",
+					   "---" : "o",
+					   ".--." : "p",
+					   "--.-" : "q",
+					   ".-." : "r",
+					   "..." : "s",
+					   "-" : "t",
+					   "..-" : "u",
+					   "...-" : "v",
+					   ".--" : "w",
+					   "-..-" : "x",
+					   "-.--" : "y",
+					   "--.." : "z",
+					   "-.-.--" : "!",
+					   ".-.-.-" : ".",
+					   "--..--" : ","
+					};
+
+				// read entered value from textarea
+				var message = document.getElementById('morse').value;
+
+				// convert morsecode into text and push into array
+				var msgconverted = [];
+				message.split("   ").map(function (word) {
+					word.split(" ").map(function (latter) {
+						// body ....
+						msgconverted.push(dictionary[latter]);
+					});
+					msgconverted.push(" ");
+				});
+
+				// print output on textarea
+				document.getElementById('text').innerHTML = (msgconverted.join(""));
+}
+	</script>
+
+</body>
+</html>
