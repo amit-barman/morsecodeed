@@ -6,8 +6,8 @@
 # Screenshots
 
 <p float="left">
-	<img src="screenshot\screenshot.png" height="250" width="410" />
-	<img src="screenshots\screenshot1.png" height="250" width="410" />
+	<img src="screenshot\Screenshot.png" height="250" width="410" />
+	<img src="screenshots\Screenshot1.png" height="250" width="410" />
 </p>
 
 ## what is morsecode ?
