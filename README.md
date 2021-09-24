@@ -16,7 +16,7 @@ Morse code is a method used in telecommunication to encode text characters as st
 
 ## what is morsecodeed ?
 
- morsecodeed is a simple website created in javascript for encode plain text to morse code and decode morse code to plain text ...
+ morsecodeed is a simple web application created in javascript. Uaing this application we can esily encode plain text into morse code and decode morse code to plain text ...
  
  ## features
  
